@@ -20,3 +20,6 @@ desktop.ini
 # ===== 临时文件 =====
 *.tmp
 ~$*
+
+# ===== WorkBuddy 工具数据（非笔记内容）=====
+.workbuddy-ai/
