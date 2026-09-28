@@ -1,0 +1,22 @@
+# ===== Obsidian =====
+# 界面布局/窗口状态，每次打开 Obsidian 都会变，同步它只会产生噪音 diff
+workspace.json
+workspace-mobile.json
+
+# 缓存
+**/.obsidian/cache
+
+# 插件配置可能存放 API Key，公开仓库里不放
+**/.obsidian/plugins/*/data.json
+
+# 回收站
+.trash/
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 临时文件 =====
+*.tmp
+~$*
