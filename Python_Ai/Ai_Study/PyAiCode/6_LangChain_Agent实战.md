@@ -60,7 +60,7 @@ llm = ChatOpenAI(
 )
 ```
 
-> `temperature=0` 是让 Agent 稳一点。Agent 调工具时我们不希望它"发挥创意"，要它老老实实按规则来。参见 [[temperature]]。
+> `temperature=0` 是让 Agent 稳一点。Agent 调工具时我们不希望它"发挥创意"，要它老老实实按规则来。参见 [[Temperature]]。
 
 ## 第二步：定义工具（Agent 的手）
 
