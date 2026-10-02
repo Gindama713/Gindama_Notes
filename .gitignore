@@ -1,13 +1,6 @@
 # ===== Obsidian =====
-# 界面布局/窗口状态，每次打开 Obsidian 都会变，同步它只会产生噪音 diff
-workspace.json
-workspace-mobile.json
-
-# 缓存
-**/.obsidian/cache
-
-# 插件配置可能存放 API Key，公开仓库里不放
-**/.obsidian/plugins/*/data.json
+# vault 自身的配置，不同设备/不同版本会不一致，不同步
+**/.obsidian/
 
 # 回收站
 .trash/
@@ -21,5 +14,6 @@ desktop.ini
 *.tmp
 ~$*
 
-# ===== WorkBuddy 工具数据（非笔记内容）=====
+# ===== WorkBuddy 工具数据（非笔记内容，含会话记忆）=====
+.workbuddy/
 .workbuddy-ai/

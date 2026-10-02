@@ -209,13 +209,16 @@ print(result["output"])
 
 ## 踩坑提醒
 
-|坑|现象|怎么解决|
-|---|---|---|
-|没写工具 docstring|Agent 乱调工具或不调|三引号说明必须写清楚，最好带示例|
-|忘了 `agent_scratchpad`|报错或 Agent 卡住|prompt 里一定要有这个 placeholder|
-|工具 description 太模糊|该调计算器却调了搜索|把"什么时候用"写明白|
-|死循环|反复调同一个工具停不下来|`AgentExecutor` 里设 `max_iterations=5`|
-|MiniMax 不返回工具调用|Agent 当没看见工具|确认模型支持 function calling，M3 支持|
-|中文工具名乱码|工具名最好用英文，description 可以中文|name 用英文，docstring 用中文|
+| 坑                     | 现象                        | 怎么解决                                  |
+| --------------------- | ------------------------- | ------------------------------------- |
+| 没写工具 docstring        | Agent 乱调工具或不调             | 三引号说明必须写清楚，最好带示例                      |
+| 忘了 `agent_scratchpad` | 报错或 Agent 卡住              | prompt 里一定要有这个 placeholder            |
+| 工具 description 太模糊    | 该调计算器却调了搜索                | 把"什么时候用"写明白                           |
+| 死循环                   | 反复调同一个工具停不下来              | `AgentExecutor` 里设 `max_iterations=5` |
+| MiniMax 不返回工具调用       | Agent 当没看见工具              | 确认模型支持 function calling，M3 支持         |
+| 中文工具名乱码               | 工具名最好用英文，description 可以中文 | name 用英文，docstring 用中文                |
 
 > 一个实用建议：先把上面第四步的 `verbose=True` 输出反复看几遍，看懂 Agent 的思考过程，比写十个 demo 都管用。[[ReAct]] 不是背出来的，是看它跑出来的。
+
+
+LLM → Tool Calling → MCP → Agent → ReAct → [[LangGraph]]

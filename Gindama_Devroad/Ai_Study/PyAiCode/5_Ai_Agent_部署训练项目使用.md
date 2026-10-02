@@ -51,7 +51,7 @@ LLM 原生是失忆的——每一次对话都是全新的，除非你把上下�
 
 当记忆太多、上下文装不下时，一个常用的方案是：把记忆存到向量数据库里，需要的时候"检索"相关的出来。
 
-这个思路叫[[ RAG]]（Retrieval-Augmented Generation），在 Agent 里同样适用。
+这个思路叫[[4_RAG 检索增强生成]]（Retrieval-Augmented Generation），在 Agent 里同样适用。
 
 工作流程：
 
